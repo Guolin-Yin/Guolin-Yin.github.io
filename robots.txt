@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://Guolin-Yin.github.io/al-folio/sitemap.xml
+Sitemap: https://Guolin-Yin.github.io/sitemap.xml
