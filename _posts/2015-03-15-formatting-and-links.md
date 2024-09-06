@@ -18,7 +18,7 @@ Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptow
 
 #### Check List
 
-- [x] Brush Teeth
+- [ ] Brush Teeth
 - [ ] Put on socks
   - [x] Put on left sock
   - [ ] Put on right sock
