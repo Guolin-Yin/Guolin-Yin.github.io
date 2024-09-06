@@ -31,3 +31,7 @@ jobs:
         with:
           deploy_key: ${{ secrets.DEPLOY_KEY }}
           publish_dir: ./_site
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        token: ${{ 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 }}
