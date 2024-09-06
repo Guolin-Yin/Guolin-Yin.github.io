@@ -129,24 +129,13 @@
       "name": "Programming",
       "level": "Expert",
       "icon": "",
-      "keywords": [
-        "Python",
-        "Pandas",
-        "Sklearn",
-        "NumPy",
-        "TensorFlow",
-        "PyTorch"
-      ]
+      "keywords": ["Python", "Pandas", "Sklearn", "NumPy", "TensorFlow", "PyTorch"]
     },
     {
       "name": "Data Visualization",
       "level": "Advanced",
       "icon": "",
-      "keywords": [
-        "Plotly",
-        "Matplotlib",
-        "Seaborn"
-      ]
+      "keywords": ["Plotly", "Matplotlib", "Seaborn"]
     },
     {
       "name": "Machine Learning",

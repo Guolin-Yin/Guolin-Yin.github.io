@@ -8,8 +8,7 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: true # crops the image to make it circular
-  more_info: 
-    <p>Department of Electrical Engineering and Electronics</p>
+  more_info: <p>Department of Electrical Engineering and Electronics</p>
     <p>University of Liverpool</p>
     <p>Brownlow Hill Liverpool L69 3GJ United Kingdom</p>
 
