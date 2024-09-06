@@ -13,11 +13,9 @@ profile:
     <p>University of Liverpool</p>
     <p>Brownlow Hill Liverpool L69 3GJ United Kingdom</p>
 
+social: true # includes social icons at the bottom of the page
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
 ---
 
-Hi there
-
-My name my Guolin Yin
+Guolin Yin (尹国遴) is currently a Research Associate at the Department of Electrical Engineering and Electronics, the University of Liverpool, UK. He received his PhD from the University of Liverpool, UK, in 2023 under the supervision of Dr Junqing Zhang. His extensive background in Deep learning and signal processing. His work mainly involves design novel AI-driven solution for wireless signal, remote sensing and wirless sensing.
