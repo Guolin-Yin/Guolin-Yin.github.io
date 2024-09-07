@@ -6,4 +6,4 @@ inline: false
 related_posts: false
 ---
 
- :sparkles: :smile: After four years of working on Deep-learning powered Wi-Fi sensing, Guolin Yin passed his VIVA, Congrad Dr. Yin!
+:sparkles: :smile: After four years of working on Deep-learning powered Wi-Fi sensing, Guolin Yin passed his VIVA, Congrad Dr. Yin!
