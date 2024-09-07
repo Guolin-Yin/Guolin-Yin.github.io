@@ -1,8 +1,9 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
-inline: true
+title: Guolin Yin passed his VIVA
+date: 2024-07-02
+inline: false
 related_posts: false
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+ :sparkles: :smile: After four years of working on Deep-learning powered Wi-Fi sensing, Guolin Yin passed his VIVA, Congrad Dr. Yin!
