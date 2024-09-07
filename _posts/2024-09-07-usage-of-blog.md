@@ -3,7 +3,7 @@ layout: post
 title: How to use blog
 date: 2024-09-07
 description: this is what included images could look like
-tags: formatting images
+tags: blog
 categories: sample-posts
 thumbnail: assets/img/9.jpg
 map: true
