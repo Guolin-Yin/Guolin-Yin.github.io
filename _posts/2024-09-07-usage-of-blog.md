@@ -18,6 +18,7 @@ chart:
   chartjs: true
 pretty_table: true
 ---
+
 A sample blog page that demonstrates the inclusion of Tweets/Timelines/etc.
 
 # Tweet
@@ -145,12 +146,13 @@ By using [Bootstrap Table](https://bootstrap-table.com/) it is possible to creat
 
 If you prefer publishing blog posts on medium.com or other external sources, starting version v0.5.0, al-folio lets you to display your external posts in the blog feed of your website! 🎉🎉
 
-Configuring external sources of super simple. After upgrading to v0.5.0, just add the following section to your _config.yml:
+Configuring external sources of super simple. After upgrading to v0.5.0, just add the following section to your \_config.yml:
 
 external_sources:
-  - name: medium.com  # name of the source (arbitrary string)
-    rss_url: https://medium.com/@<your-medium-username>/feed
-The example above adds your medium.com blog post feed as an external source. But you can add arbitrary RSS feeds as sources.
+
+- name: medium.com # name of the source (arbitrary string)
+  rss_url: https://medium.com/@<your-medium-username>/feed
+  The example above adds your medium.com blog post feed as an external source. But you can add arbitrary RSS feeds as sources.
 
 Any questions or suggestions? 👉 Start a discussion on GitHub!
 
@@ -313,7 +315,6 @@ These custom styles can be used by adding the specific class to the blockquote, 
 {: .block-danger }
 
 <!-- prettier-ignore-end -->
-
 
 This is an example post with some [chart.js](https://www.chartjs.org/) code.
 
@@ -622,9 +623,6 @@ sed do eiusmod tempor.
 Lorem ipsum dolor sit amet, consectetur adipisicing.
 {% endquote %}
 
-
-
-
 To include a jupyter notebook in a post, you can use the following code:
 
 {% raw %}
@@ -732,7 +730,6 @@ The rest of the images in this post are all zoomable, arranged into different mi
     </div>
 </div>
 
-
 This theme implements a built-in Jekyll feature, the use of Rouge, for syntax highlighting.
 It supports more than 100 languages.
 This example is in C++.
@@ -824,7 +821,6 @@ string myString;
 
 {% endhighlight %}
 
-
 This theme supports rendering beautiful math in inline and display modes using [MathJax 3](https://www.mathjax.org/) engine. You just need to surround your math expression with `$$`, like `$$ E = mc^2 $$`. If you leave it inside a paragraph, it will produce an inline expression, just like $$ E = mc^2 $$.
 
 To use display mode, again surround your expression with `$$` and place it as a separate paragraph. Here is an example:
@@ -838,7 +834,7 @@ MathJax will automatically number equations:
 
 \begin{equation}
 \label{eq:cauchy-schwarz}
-\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
+\left( \sum*{k=1}^n a_k b_k \right)^2 \leq \left( \sum*{k=1}^n a*k^2 \right) \left( \sum*{k=1}^n b_k^2 \right)
 \end{equation}
 
 and by adding `\label{...}` inside the equation environment, we can now refer to the equation using `\eqref`.
