@@ -169,11 +169,9 @@ disqus_shortname: al-folio # put your disqus shortname
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
 external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
-  - name: Google Blog
+  - name: Using Nexmon CSI on Asus AC86U Router
     posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
+      - url: https://colinguolin.notion.site/Nexmon-CSI-Asus-AC86U-Router-ac42ddc00673413390d2c0a03354d757?pvs=4
         published_date: 2024-05-14
 
 # -----------------------------------------------------------------------------
