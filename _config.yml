@@ -253,7 +253,7 @@ keep_files:
 # Plug-ins
 plugins:
   - jekyll-archives
-  - jekyll-feed 
+  - jekyll-feed
   - jekyll-email-protect
   - jekyll-feed
   - jekyll-get-json
