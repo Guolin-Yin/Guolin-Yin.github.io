@@ -148,11 +148,7 @@ If you prefer publishing blog posts on medium.com or other external sources, sta
 
 Configuring external sources of super simple. After upgrading to v0.5.0, just add the following section to your \_config.yml:
 
-external_sources:
 
-- name: medium.com # name of the source (arbitrary string)
-  rss_url: https://medium.com/@<your-medium-username>/feed
-  The example above adds your medium.com blog post feed as an external source. But you can add arbitrary RSS feeds as sources.
 
 Any questions or suggestions? 👉 Start a discussion on GitHub!
 
@@ -175,9 +171,6 @@ It does also support embedding videos from different sources. Here are some exam
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include video.liquid path="https://www.youtube.com/embed/jNQXAC9IVRw" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include video.liquid path="https://player.vimeo.com/video/524933864?h=1ac4fd9fb4&title=0&byline=0&portrait=0" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
