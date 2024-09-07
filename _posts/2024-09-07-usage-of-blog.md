@@ -148,8 +148,6 @@ If you prefer publishing blog posts on medium.com or other external sources, sta
 
 Configuring external sources of super simple. After upgrading to v0.5.0, just add the following section to your \_config.yml:
 
-
-
 Any questions or suggestions? 👉 Start a discussion on GitHub!
 
 This is an example post with videos. It supports local video files.
