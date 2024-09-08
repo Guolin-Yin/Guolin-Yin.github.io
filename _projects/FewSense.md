@@ -1,6 +1,6 @@
 ---
 layout: page
-title: FewSense asdf qw efqwef ni oasdfnoi qwenoi sdnfoasdn osadnfoi
+title: FewSense
 description: with background image
 img: assets/img/12.jpg
 importance: 1
