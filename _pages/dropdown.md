@@ -1,9 +1,9 @@
 ---
 layout: page
-title: More
-nav: true
+title: ...
+nav: false
 nav_order: 8
-dropdown: true
+dropdown: false
 children:
   - title: publications
     permalink: /publications/
@@ -14,3 +14,4 @@ children:
   - title: blog
     permalink: /blog/
 ---
+It all about love which keeps you going.

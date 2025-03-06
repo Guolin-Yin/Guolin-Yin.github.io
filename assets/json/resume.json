@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Guolin Yin",
-    "label": "Researcher and Data Scientist",
+    "label": "Researcher",
     "image": "",
-    "email": "Guolin.Yin@liverpool.ac.uk",
+    "email": "Guolin.Yin2@liverpool.ac.uk",
     "phone": "+44 07737229819",
     "url": "https://www.linkedin.com/in/guolin-yin-302545227/",
-    "summary": "Ph.D. candidate in Device-Free Wireless Sensing at the University of Liverpool with extensive experience in AI, Wi-Fi sensing, and data science.",
+    "summary": "Research Associate at the University of Liverpool with extensive experience in AI, Wireless signal, Wireless Sensing, and data science.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -69,8 +69,8 @@
       "url": "",
       "area": "Device-Free Wireless Sensing",
       "studyType": "Ph.D",
-      "startDate": "2020-09-01",
-      "endDate": "2024-09-01",
+      "startDate": "2020-10-01",
+      "endDate": "2024-07-01",
       "score": "",
       "courses": []
     },

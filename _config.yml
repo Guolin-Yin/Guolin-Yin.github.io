@@ -173,7 +173,9 @@ external_sources:
     posts:
       - url: https://colinguolin.notion.site/Nexmon-CSI-Asus-AC86U-Router-ac42ddc00673413390d2c0a03354d757?pvs=4
         published_date: 2024-05-14
-
+        intro: >
+          This notion blog guide you to set up the nexmon CSI tool on ASUS AC86U router, for Wi-Fi sening.
+          
 # -----------------------------------------------------------------------------
 # Newsletter
 # -----------------------------------------------------------------------------
