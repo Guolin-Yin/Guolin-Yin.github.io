@@ -20,10 +20,13 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 Guolin Yin (尹国遴) is currently a Research Associate at the Department of Electrical Engineering and Electronics, the University of Liverpool, UK. He received his PhD from the University of Liverpool, UK, in 2023 under the supervision of [Dr Junqing Zhang](https://junqing-zhang.github.io/). 
 
 He has an extensive background in:
-- Deep learning, Machine learning  
+- Deep learning, Machine learning
+- Generative Models
 - Signal processing  
 - Radio Frequency Fingerprint Identification  
-- Wireless Sensing  
+- Wireless Sensing
+
+His work mainly involves designing novel AI-driven solutions for wireless signals, remote sensing, and wireless sensing. He is keen to expand his research area further and explore new interdisciplinary applications.
 
 He is currently serving as a TPC member for several conferences and workshops, including:
 - ICNC'25 AMCN  
@@ -32,5 +35,5 @@ He is currently serving as a TPC member for several conferences and workshops, i
 
 He also serves as a reviewer for **IEEE Transactions on Wireless Communications (TWC)**.
 
-His work mainly involves designing novel AI-driven solutions for wireless signals, remote sensing, and wireless sensing. He is keen to expand his research area further and explore new interdisciplinary applications.
+
 
