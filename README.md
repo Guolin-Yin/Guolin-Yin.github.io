@@ -1,5 +1,6 @@
 # al-folio
-
+'bin/deploy --user'
+bundle exec jekyll serve
 <div align="center">
 
 [![Preview](readme_preview/al-folio-preview.png)](https://alshedivat.github.io/al-folio/)
