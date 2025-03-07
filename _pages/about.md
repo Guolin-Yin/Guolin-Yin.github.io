@@ -17,7 +17,7 @@ news: true # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 ---
 
-Guolin Yin (尹国遴) is currently a Research Associate at the Department of Electrical Engineering and Electronics, the University of Liverpool, UK. He received his PhD from the University of Liverpool, UK, in 2023 under the supervision of [Dr Junqing Zhang](https://junqing-zhang.github.io/). 
+Guolin Yin (尹国遴) is currently a Research Associate at the Department of Electrical Engineering and Electronics, the University of Liverpool, UK. He received his PhD from the University of Liverpool, UK, in 2024 under the supervision of [Dr Junqing Zhang](https://junqing-zhang.github.io/). 
 
 He has an extensive background in:
 - Deep learning, Machine learning
