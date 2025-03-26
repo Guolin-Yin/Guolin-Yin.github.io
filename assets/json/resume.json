@@ -41,18 +41,6 @@
       ]
     },
     {
-      "name": "SC Solutions AI",
-      "position": "Data Scientist (Part-time)",
-      "url": "",
-      "startDate": "2023-12-01",
-      "endDate": "2024-07-01",
-      "summary": "Led a team of five members in an Innovate UK project, developing AI and remote sensing applications for agriculture.",
-      "highlights": [
-        "Developed models for crop growth prediction, classification, and biomass estimation.",
-        "Achieved higher accuracy than traditional methods at lower costs."
-      ]
-    },
-    {
       "name": "University of Liverpool",
       "position": "Teaching Assistant",
       "url": "",
@@ -154,15 +142,6 @@
       "language": "Chinese",
       "fluency": "Native speaker",
       "icon": ""
-    }
-  ],
-  "awards": [
-    {
-      "title": "Hong Kong and Tung Postgraduate Scholarships",
-      "date": "2021-01-01",
-      "awarder": "",
-      "url": "",
-      "summary": ""
     }
   ]
 }
