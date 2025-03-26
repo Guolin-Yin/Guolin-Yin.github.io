@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Best Paper Award at WCNC 2025 Workshop - Milan, Italy
-date: 2025-03-24
+date: 2025-03-26
 inline: False
 related_posts: false
 ---
