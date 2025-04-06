@@ -5,8 +5,7 @@
     "image": "",
     "email": "Guolin.Yin2@liverpool.ac.uk",
     "phone": "+44 07737229819",
-    "url": "https://www.linkedin.com/in/guolin-yin-302545227/",
-    "summary": "Research Associate at the University of Liverpool with extensive experience in AI, Wireless signal, Wireless Sensing, and data science.",
+    "Linkedin": "https://www.linkedin.com/in/guolin-yin-302545227/",
     "location": {
       "address": "",
       "postalCode": "",
@@ -32,14 +31,14 @@
       "name": "University of Liverpool",
       "position": "Research Associate",
       "url": "",
-      "startDate": "2024-07-01",
+      "startDate": "2024-07-02",
       "endDate": "Present",
-      "summary": "Leading an EPSRC-funded project on radio frequency fingerprint identification (RFFI), developing AI models for RF signatures to enhance communication and IoT security.",
+      "summary": "",
       "highlights": [
-        "Collaborating with academic partners and industry partners such as MathWorks.",
-        "Developing security solutions using advanced AI techniques."
       ]
-    },
+    }
+  ],
+  "teaching": [
     {
       "name": "University of Liverpool",
       "position": "Teaching Assistant",
@@ -94,54 +93,6 @@
       "endDate": "2016-09-01",
       "score": "GPA: 3.7/4.0",
       "courses": []
-    }
-  ],
-  "publications": [
-    {
-      "name": "FewSense: Towards a Scalable and Cross-domain Wi-Fi Sensing System Using Few-shot Learning",
-      "publisher": "IEEE Trans. Mobile Comput.",
-      "releaseDate": "2024-01-01",
-      "url": "",
-      "summary": "Proposed a few-shot learning-based system to address scalability and domain dependency in Wi-Fi sensing systems."
-    },
-    {
-      "name": "Adversarial Attacks Against Deep Learning-based Wi-Fi Sensing Systems and Countermeasures",
-      "publisher": "IEEE Trans. Mobile Comput.",
-      "releaseDate": "2023-01-01",
-      "url": "",
-      "summary": "Studied adversarial attacks in Wi-Fi sensing systems and proposed countermeasures."
-    }
-  ],
-  "skills": [
-    {
-      "name": "Programming",
-      "level": "Expert",
-      "icon": "",
-      "keywords": ["Python", "Pandas", "Sklearn", "NumPy", "TensorFlow", "PyTorch"]
-    },
-    {
-      "name": "Data Visualization",
-      "level": "Advanced",
-      "icon": "",
-      "keywords": ["Plotly", "Matplotlib", "Seaborn"]
-    },
-    {
-      "name": "Machine Learning",
-      "level": "Expert",
-      "icon": "",
-      "keywords": []
-    }
-  ],
-  "languages": [
-    {
-      "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
-    },
-    {
-      "language": "Chinese",
-      "fluency": "Native speaker",
-      "icon": ""
     }
   ]
 }
