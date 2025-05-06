@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a> University of Liverpool
+subtitle: <a href='#'>Affiliations</a> Queen's University Belfast
 
 profile:
   align: right
@@ -19,7 +19,7 @@ news: true # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 ---
 
-Guolin Yin (尹国遴) is currently a Research Associate at CWI, Queens University Belfast, UK. Before that he was at the Department of Electrical Engineering and Electronics, the University of Liverpool, UK. He received his PhD from the same University in 2024 under the supervision of [Dr. Junqing Zhang](https://junqing-zhang.github.io/). 
+Guolin Yin (尹国遴) is currently a Research Fellow at CWI, Queens University Belfast, UK, working under the supervision of [Prof. Simon Cotton](https://www.qub.ac.uk/research-centres/cwi/about/ProfessorSimonCotton/). Before that he was at the Department of Electrical Engineering and Electronics, the University of Liverpool, UK. He received his PhD from the same University in 2024 under the supervision of [Dr. Junqing Zhang](https://junqing-zhang.github.io/). 
 
 ---
 # Research area
@@ -38,11 +38,13 @@ His work mainly involves designing novel AI-driven solutions for wireless signal
 
 He is currently serving as a TPC member for several conferences and workshops, including:
 
-- ICNC'25 AMCN  
-- INFOCOM DeepWireless 2025  
-- WS18 ICC 2025 Workshop – MLDLWiSec  
+- **ICNC'25 AMCN**
+- **INFOCOM DeepWireless 2025**
+- **WS18 ICC 2025 Workshop – MLDLWiSec**
 
-He also serves as a reviewer for **IEEE Transactions on Wireless Communications (TWC)**.
+He also serves as a reviewer for:
+- **IEEE Transactions on Wireless Communications (TWC)**
+- **IEEE Transactions on Mobile Computing (TMC)**
 
 ---
 # Contact

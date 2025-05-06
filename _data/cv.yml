@@ -5,18 +5,16 @@
       value: Guolin Yin
     - name: Languages
       value: English, Mandarin
+
+
 - title: Work Experience
   type: time_table
   contents:
     - title: Research Fellow
       institution: Queen's University Belfast
-      year: May 2024-Now
+      year: May 2024-Present
       description:
         - Wi-Fi based RF Sensing
-
-- title: Work Experience
-  type: time_table
-  contents:
     - title: Research Associate
       institution: University of Liverpool
       year: July 2024-May 2025
@@ -28,19 +26,24 @@
   contents:
     - title: Ph.D
       institution: University of Liverpool
-      year: 2024
+      year: Oct 2020-Jul 2024
       description:
         - Device-Free Wireless Sensing
+        - I was so busy with my research and work. I almost forgot how to enjoy life. But I still remember where I started and what I believe.
     - title: M.Sc
       institution: University of Manchester
-      year: 2019
+      year: Sep 2018-Dec 2019
       description:
         - Communication and Signal Processing
+        - Ok, things just getting craszier and craszier. Meet with more friends and enjoy the life. I worked my ass off on my study during the day and raved my ass off at night. I never skipped a single party as well as a single class.
+        # - (年轻人是真能熬啊。)
     - title: B.Eng.
       institution: Coventry University
-      year: 2018
+      year: Sep 2016-Jun 2018
       description:
         - Electronic Engineering
+        - Just like a regular college student, hang out with friends for party, drink whiskey (jack daniels to be specific). Party all night and sleep all day. Alway smile and and believe that I can do anything.
+        - Mean while, 
 
 
 
