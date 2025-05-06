@@ -5,13 +5,21 @@
       value: Guolin Yin
     - name: Languages
       value: English, Mandarin
+- title: Work Experience
+  type: time_table
+  contents:
+    - title: Research Fellow
+      institution: Queen's University Belfast
+      year: May 2024-Now
+      description:
+        - Wi-Fi based RF Sensing
 
 - title: Work Experience
   type: time_table
   contents:
     - title: Research Associate
       institution: University of Liverpool
-      year: July 2024-Now
+      year: July 2024-May 2025
       description:
         - Wi-Fi based radio frequency fingerprint identification (RFFI)
 
