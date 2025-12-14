@@ -4,6 +4,7 @@ require 'jekyll'
 require 'nokogiri'
 require 'time'
 require 'uri'
+require 'fileutils'
 
 module ExternalPosts
   class ExternalPostsGenerator < Jekyll::Generator
@@ -11,14 +12,18 @@ module ExternalPosts
     priority :high
 
     def generate(site)
-      if site.config['external_sources'] != nil
-        site.config['external_sources'].each do |src|
-          puts "Fetching external posts from #{src['name']}:"
+      return if site.config['external_sources'].nil?
+
+      site.config['external_sources'].each do |src|
+        puts "Fetching external posts from #{src['name']}:"
+        begin
           if src['rss_url']
             fetch_from_rss(site, src)
           elsif src['posts']
             fetch_from_urls(site, src)
           end
+        rescue StandardError => e
+          Jekyll.logger.warn("ExternalPosts:", "Failed to fetch '#{src['name']}' (#{e.class}: #{e.message})")
         end
       end
     end
@@ -28,6 +33,8 @@ module ExternalPosts
       return if xml.nil?
       feed = Feedjira.parse(xml)
       process_entries(site, src, feed.entries)
+    rescue StandardError => e
+      Jekyll.logger.warn("ExternalPosts:", "Failed to fetch RSS #{src['rss_url']} (#{e.class}: #{e.message})")
     end
 
     def process_entries(site, src, entries)
@@ -51,7 +58,9 @@ module ExternalPosts
         slug = "#{source_name.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')}-#{url.split('/').last}" if slug.empty?
       end
     
-      path = site.in_source_dir("_posts/#{slug}.md")
+      posts_path = posts_dir(site)
+      FileUtils.mkdir_p(site.in_source_dir(posts_path))
+      path = site.in_source_dir(posts_path, "#{slug}.md")
     
       doc = Jekyll::Document.new(
         path, { :site => site, :collection => site.collections['posts'] }
@@ -81,6 +90,7 @@ module ExternalPosts
       src['posts'].each do |post|
         puts "...fetching #{post['url']}"
         content = fetch_content_from_url(post['url'])
+        next unless content
         content[:published] = parse_published_date(post['published_date'])
 
         # ADDED: If there's an intro, store it in content[:intro]
@@ -147,6 +157,9 @@ module ExternalPosts
         content: body_content,
         summary: description
       }
+    rescue StandardError => e
+      Jekyll.logger.warn("ExternalPosts:", "Failed to fetch #{url} (#{e.class}: #{e.message})")
+      nil
     end
 
     # Helper method to parse Notion title from URL slug
@@ -161,6 +174,14 @@ module ExternalPosts
         parts.pop
       end
       parts.join(' ')
+    end
+
+    private
+
+    def posts_dir(site)
+      base = site.config['collections_dir']
+      base = base.nil? || base.empty? ? '' : base
+      File.join(base, '_posts')
     end
 
   end

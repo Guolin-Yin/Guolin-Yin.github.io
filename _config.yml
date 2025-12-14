@@ -184,6 +184,9 @@ newsletter:
 # -----------------------------------------------------------------------------
 
 collections:
+  pages:
+    output: true
+    permalink: /:path/
   news:
     defaults:
       layout: post
@@ -196,7 +199,7 @@ collections:
 announcements:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  limit: 5 # leave blank to include all the news in the `content/_news` folder
 
 latest_posts:
   enabled: true
@@ -221,7 +224,10 @@ kramdown:
       start_line: 1
 
 # Includes & excludes
-include: ["_pages"]
+collections_dir: content
+data_dir: content/_data
+layouts_dir: theme/_layouts
+includes_dir: theme/_includes
 exclude:
   - bin/
   - CONTRIBUTING.md
@@ -237,11 +243,13 @@ exclude:
   - lighthouse_results/
   - package.json
   - package-lock.json
-  - _pages/about_einstein.md
+  - content/_pages/about_einstein.md
+  - content/README.md
   - purgecss.config.js
   - README.md
   - readme_preview/
   - vendor
+  - theme/README.md
 keep_files:
   - CNAME
   - .nojekyll
@@ -274,6 +282,7 @@ defaults:
       sitemap: false
 
 sass:
+  sass_dir: theme/_sass
   style: compressed
 
 # -----------------------------------------------------------------------------
@@ -314,7 +323,7 @@ scholar:
   style: apa
   locale: en
 
-  source: /_bibliography/
+  source: /content/_bibliography/
   bibliography: papers.bib
   bibliography_template: bib
   # Note: if you have latex math in your bibtex, the latex filter
@@ -333,7 +342,7 @@ scholar:
   group_order: descending
 
 # Display different badges withs stats for your publications
-# Customize badge behavior in _layouts/bib.liquid
+# Customize badge behavior in theme/_layouts/bib.liquid
 enable_publication_badges:
   altmetric: true # Altmetric badge (Customization options: https://badge-docs.altmetric.com/index.html)
   dimensions: true # Dimensions badge (Customization options: https://badge.dimensions.ai/)

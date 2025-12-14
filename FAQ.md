@@ -117,7 +117,7 @@ Note that libraries tend to be deprecated and support for them dropped as they a
 
 ### How can I update Font Awesome version on the template
 
-To update the Font Awesome version, you need to download the latest release "for the web" from the [Font Awesome website](https://fontawesome.com/download). After downloading, extract the zip file and copy the `scss/` directory content to `_sass/font-awesome/` and the `webfonts/` content to `assets/webfonts/`.
+To update the Font Awesome version, you need to download the latest release "for the web" from the [Font Awesome website](https://fontawesome.com/download). After downloading, extract the zip file and copy the `scss/` directory content to `theme/_sass/font-awesome/` and the `webfonts/` content to `assets/webfonts/`.
 
 ---
 

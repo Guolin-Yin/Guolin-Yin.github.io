@@ -1,5 +1,5 @@
 // based on the original typograms code from https://github.com/google/typograms/blob/main/src/typograms.js
-// only moved the css to its own file (_sass/_typograms.scss) and commented the last line of the file
+// only moved the css to its own file (theme/_sass/_typograms.scss) and commented the last line of the file
 const ratio = 2;
 
 function grid(width, height) {
