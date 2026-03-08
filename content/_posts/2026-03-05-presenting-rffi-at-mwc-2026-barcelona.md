@@ -109,4 +109,4 @@ The successful demonstration at MWC 2026 validates that cross-environment RFFI i
 
 ---
 
-For more details about the technical implementation, please visit the [Real-time Wi-Fi based RFFI project page](/projects/Real-time%20Wi-Fi%20based%20RFFI/).
+For more details about the technical implementation, please visit the [Real-time Wi-Fi based RFFI project page](/projects/Real-time-Wi-Fi-based-RFFI/).
