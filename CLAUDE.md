@@ -76,6 +76,7 @@ npm run prettier
 ### Directory Structure
 
 **Content Directories:**
+
 - `content/_pages/`: Main site pages (about, CV, publications, projects, blog, etc.) written in Markdown/Liquid
 - `content/_posts/`: Blog posts (currently populated via external sources)
 - `content/_news/`: News/announcements shown on the homepage
@@ -85,17 +86,20 @@ npm run prettier
 - `assets/`: Static assets (images, PDFs, JSON resume, etc.)
 
 **Template Directories:**
+
 - `theme/_layouts/`: Page layout templates (about, post, cv, distill, bib, etc.)
 - `theme/_includes/`: Reusable template components
 - `theme/_sass/`: SCSS stylesheets
 - `_plugins/`: Custom Jekyll plugins written in Ruby
 
 **Build Output:**
+
 - `_site/`: Generated static site (gitignored, created during build)
 
 ### Custom Jekyll Plugins
 
 Located in `_plugins/`, these extend Jekyll's functionality:
+
 - `external-posts.rb`: Fetches external blog posts from sources like Notion
 - `google-scholar-citations.rb`: Fetches citation counts from Google Scholar
 - `download-3rd-party.rb`: Downloads third-party libraries when configured
@@ -105,6 +109,7 @@ Located in `_plugins/`, these extend Jekyll's functionality:
 ### Important Jekyll Plugins
 
 Defined in `_config.yml` and `Gemfile`:
+
 - **jekyll-scholar**: Processes BibTeX bibliography files and generates publication pages
 - **jekyll-imagemagick**: Creates responsive images in multiple sizes/formats
 - **jekyll-jupyter-notebook**: Embeds Jupyter notebooks in blog posts
@@ -115,20 +120,24 @@ Defined in `_config.yml` and `Gemfile`:
 ### Configuration Patterns
 
 **Publications:**
+
 - BibTeX entries go in `content/_bibliography/papers.bib`
 - Configured via the `scholar:` section in `_config.yml`
 - Supports extra fields like `pdf`, `code`, `slides`, `website`, `abstract`
 - PDFs should be placed in `assets/pdf/`
 
 **CV:**
+
 - Can use either `assets/json/resume.json` (JSON Resume standard) or `content/_data/cv.yml`
 - JSON format takes precedence when both exist
 
 **External Blog Posts:**
+
 - Configured in `_config.yml` under `external_sources:`
 - Currently links to a Notion blog about Nexmon CSI setup
 
 **Collections:**
+
 - Defined in `_config.yml` under `collections:`
 - News items and projects are Jekyll collections with custom permalinks
 
@@ -137,10 +146,12 @@ Defined in `_config.yml` and `Gemfile`:
 ### GitHub Pages Deployment
 
 The site uses a two-branch workflow:
+
 - `master`: Source code and content
 - `gh-pages`: Built static site (auto-generated, DO NOT edit manually)
 
 **Automatic Deployment:**
+
 1. Push to `master` branch triggers `.github/workflows/deploy.yml`
 2. GitHub Actions builds the site with Jekyll
 3. Result is pushed to `gh-pages` branch
@@ -148,6 +159,7 @@ The site uses a two-branch workflow:
 
 **Manual Deployment Script:**
 The `bin/deploy` script:
+
 1. Checks for uncommitted changes
 2. Builds site with `JEKYLL_ENV=production`
 3. Runs PurgeCSS to remove unused styles
@@ -157,6 +169,7 @@ The `bin/deploy` script:
 ### Configuration Settings
 
 Site settings in `_config.yml`:
+
 - `url`: `https://Guolin-Yin.github.io` (must match GitHub Pages URL)
 - `baseurl`: Empty (root deployment)
 - GitHub username: `Guolin-Yin`
@@ -173,6 +186,7 @@ Site settings in `_config.yml`:
 ### Updating CV
 
 Edit either:
+
 - `assets/json/resume.json` (JSON Resume format), or
 - `content/_data/cv.yml` (YAML format)
 

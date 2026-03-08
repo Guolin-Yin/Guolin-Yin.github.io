@@ -7,6 +7,7 @@ importance: 1
 category: demo
 related_publications: true
 ---
+
 This project aims to achieve a cross-environment Wi-Fi based RFFI prototype. The signal collection is based on Picoscenes
 
 ## Overall Setup
@@ -17,8 +18,6 @@ This project aims to achieve a cross-environment Wi-Fi based RFFI prototype. The
     <div class="caption">Overall system setup of the real-time Wi-Fi based RFFI demo</div>
   </div>
 </div>
-
-
 
 ## Real-time Wi-Fi based RFFI Demo
 
@@ -34,20 +33,17 @@ The demo setup consists of the following components:
     <div class="col-sm mt-3 mt-md-0">
       {% include figure.liquid loading="eager" path="assets/img/RFFI_DEMO/ui.png" class="img-fluid rounded z-depth-1" %}
 
-
 - **Access Point (AP):**  
   The AP is responsible for connecting multiple Wi-Fi dongles (transmitters) to the network, enabling communication and data collection.
   <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
       {% include figure.liquid loading="eager" path="assets/img/RFFI_DEMO/ap.png" class="img-fluid rounded z-depth-1" %}
 
-
 - **Transmitter:**  
   A laptop equipped with a Wi-Fi dongle acts as the transmitter, sending Wi-Fi packets for identification.
   <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
       {% include figure.liquid loading="eager" path="assets/img/RFFI_DEMO/transmitter_laptop.png" class="img-fluid rounded z-depth-1" %}
-
 
 - **Receiver:**  
   The receiver is implemented using a USRP (Universal Software Radio Peripheral), which captures the Wi-Fi signals transmitted by the dongles.
@@ -71,11 +67,11 @@ The demo setup consists of the following components:
 - **Testing:** Performed in various environments and distances to evaluate generalization
 - **Confusion matrices:** Results for each test scenario are shown below. The filename indicates the environment and distance.
 
-| Environment    | Distance(s)      | Scenario             | Special Notes         |
-|---------------|------------------|----------------------|----------------------|
-| Office        | 1m, 5m           | In-environment       | Training at 1m       |
-| Classroom     | 1m, 10m          | Cross-environment    |                      |
-| Meeting Room  | 1m, 3m, NOLS     | Cross-environment    | NOLS = No Line of Sight |
+| Environment  | Distance(s)  | Scenario          | Special Notes           |
+| ------------ | ------------ | ----------------- | ----------------------- |
+| Office       | 1m, 5m       | In-environment    | Training at 1m          |
+| Classroom    | 1m, 10m      | Cross-environment |                         |
+| Meeting Room | 1m, 3m, NOLS | Cross-environment | NOLS = No Line of Sight |
 
 The dataset for both training and testing was collected across multiple months to ensure robustness and account for temporal variations.
 

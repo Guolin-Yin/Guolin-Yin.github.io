@@ -6,7 +6,6 @@
     - name: Languages
       value: English, Mandarin
 
-
 - title: Work Experience
   type: time_table
   contents:
@@ -39,8 +38,6 @@
       year: Sep 2016-Jun 2018
       description:
         - Electronic Engineering
-
-
 
 - title: Teaching Experience
   type: time_table

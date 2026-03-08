@@ -41,41 +41,41 @@ All changes made to this file are only visible after you rebuild the website. Th
 
 ## Modifying the CV information
 
-There are currently 2 different ways of generating the CV page content. The first one is by using a json file located in [assets/json/resume.json](assets/json/resume.json). It is a [known standard](https://jsonresume.org/) for creating a CV programmatically. The second one, currently used as a fallback when the json file is not found, is by using a yml file located in [content/_data/cv.yml](content/_data/cv.yml). This was the original way of creating the CV page content and since it is more human readable than a json file we decided to keep it as an option.
+There are currently 2 different ways of generating the CV page content. The first one is by using a json file located in [assets/json/resume.json](assets/json/resume.json). It is a [known standard](https://jsonresume.org/) for creating a CV programmatically. The second one, currently used as a fallback when the json file is not found, is by using a yml file located in [content/\_data/cv.yml](content/_data/cv.yml). This was the original way of creating the CV page content and since it is more human readable than a json file we decided to keep it as an option.
 
-What this means is, if there is no resume data defined in [\_config.yml](_config.yml) and loaded via a json file, it will load the contents of [content/_data/cv.yml](content/_data/cv.yml). If you want to use the [content/_data/cv.yml](content/_data/cv.yml) file as the source of your CV, you must delete the [assets/json/resume.json](assets/json/resume.json) file.
+What this means is, if there is no resume data defined in [\_config.yml](_config.yml) and loaded via a json file, it will load the contents of [content/\_data/cv.yml](content/_data/cv.yml). If you want to use the [content/\_data/cv.yml](content/_data/cv.yml) file as the source of your CV, you must delete the [assets/json/resume.json](assets/json/resume.json) file.
 
 ## Modifying the user and repository information
 
-The user and repository information is defined in [content/_data/repositories.yml](content/_data/repositories.yml). You can add as many users and repositories as you want. Both informations are used in the `repositories` section.
+The user and repository information is defined in [content/\_data/repositories.yml](content/_data/repositories.yml). You can add as many users and repositories as you want. Both informations are used in the `repositories` section.
 
 ## Creating new pages
 
-You can create new pages by adding new Markdown files in the [content/_pages](content/_pages/) directory. The easiest way to do this is to copy an existing page and modify it. You can choose the layout of the page by changing the [layout](https://jekyllrb.com/docs/layouts/) attribute in the [frontmatter](https://jekyllrb.com/docs/front-matter/) of the Markdown file, and also the path to access it by changing the [permalink](https://jekyllrb.com/docs/permalinks/) attribute. You can also add new layouts in the [theme/_layouts](theme/_layouts/) directory if you feel the need for it.
+You can create new pages by adding new Markdown files in the [content/\_pages](content/_pages/) directory. The easiest way to do this is to copy an existing page and modify it. You can choose the layout of the page by changing the [layout](https://jekyllrb.com/docs/layouts/) attribute in the [frontmatter](https://jekyllrb.com/docs/front-matter/) of the Markdown file, and also the path to access it by changing the [permalink](https://jekyllrb.com/docs/permalinks/) attribute. You can also add new layouts in the [theme/\_layouts](theme/_layouts/) directory if you feel the need for it.
 
 ## Creating new blog posts
 
-To create a new blog post, you can add a new Markdown file in the [content/_posts](content/_posts/) directory. The [name of the file must follow](https://jekyllrb.com/docs/posts/#creating-posts) the format `YYYY-MM-DD-title.md`. The easiest way to do this is to copy an existing blog post and modify it. Note that some blog posts have optional fields in the [frontmatter](https://jekyllrb.com/docs/front-matter/) that are used to enable specific behaviors or functions.
+To create a new blog post, you can add a new Markdown file in the [content/\_posts](content/_posts/) directory. The [name of the file must follow](https://jekyllrb.com/docs/posts/#creating-posts) the format `YYYY-MM-DD-title.md`. The easiest way to do this is to copy an existing blog post and modify it. Note that some blog posts have optional fields in the [frontmatter](https://jekyllrb.com/docs/front-matter/) that are used to enable specific behaviors or functions.
 
 If you want to create blog posts that are not ready to be published, but you want to track it with git, you can create a [\_drafts](https://jekyllrb.com/docs/posts/#drafts) directory and store them there.
 
 ## Creating new projects
 
-You can create new projects by adding new Markdown files in the [content/_projects](content/_projects/) directory. The easiest way to do this is to copy an existing project and modify it.
+You can create new projects by adding new Markdown files in the [content/\_projects](content/_projects/) directory. The easiest way to do this is to copy an existing project and modify it.
 
 ## Adding some news
 
-You can add news in the about page by adding new Markdown files in the [content/_news](content/_news/) directory. There are currently two types of news: inline news and news with a link. News with a link take you to a new page while inline news are displayed directly in the about page. The easiest way to create yours is to copy an existing news and modify it.
+You can add news in the about page by adding new Markdown files in the [content/\_news](content/_news/) directory. There are currently two types of news: inline news and news with a link. News with a link take you to a new page while inline news are displayed directly in the about page. The easiest way to create yours is to copy an existing news and modify it.
 
 ## Adding Collections
 
 This Jekyll theme implements `collections` to let you break up your work into categories. The theme comes with two default collections: `news` and `projects`. Items from the `news` collection are automatically displayed on the home page. Items from the `projects` collection are displayed on a responsive grid on projects page.
 
-You can easily create your own collections, apps, short stories, courses, or whatever your creative work is. To do this, edit the collections in the [\_config.yml](_config.yml) file, create a corresponding folder, and create a landing page for your collection, similar to [content/_pages/projects.md](content/_pages/projects.md).
+You can easily create your own collections, apps, short stories, courses, or whatever your creative work is. To do this, edit the collections in the [\_config.yml](_config.yml) file, create a corresponding folder, and create a landing page for your collection, similar to [content/\_pages/projects.md](content/_pages/projects.md).
 
 ## Adding a new publication
 
-To add publications create a new entry in the [content/_bibliography/papers.bib](content/_bibliography/papers.bib) file. You can find the BibTeX entry of a publication in Google Scholar by clicking on the quotation marks below the publication title, then clicking on "BibTeX", or also in the conference page itself. By default, the publications will be sorted by year and the most recent will be displayed first. You can change this behavior and more in the `Jekyll Scholar` section in [\_config.yml](_config.yml) file.
+To add publications create a new entry in the [content/\_bibliography/papers.bib](content/_bibliography/papers.bib) file. You can find the BibTeX entry of a publication in Google Scholar by clicking on the quotation marks below the publication title, then clicking on "BibTeX", or also in the conference page itself. By default, the publications will be sorted by year and the most recent will be displayed first. You can change this behavior and more in the `Jekyll Scholar` section in [\_config.yml](_config.yml) file.
 
 You can add extra information to a publication, like a PDF file in the `assets/pdfs/` directory and add the path to the PDF file in the BibTeX entry with the `pdf` field. Some of the supported fields are: `abstract`, `altmetric`, `annotation`, `arxiv`, `bibtex_show`, `blog`, `code`, `dimensions`, `doi`, `eprint`, `html`, `isbn`, `pdf`, `pmid`, `poster`, `slides`, `supp`, `video`, and `website`.
 
@@ -89,7 +89,7 @@ scholar:
   first_name: [Albert, A.]
 ```
 
-If the entry matches one form of the last names and the first names, it will be underlined. Keep meta-information about your co-authors in [content/_data/coauthors.yml](content/_data/coauthors.yml) and Jekyll will insert links to their webpages automatically. The co-author data format is as follows,
+If the entry matches one form of the last names and the first names, it will be underlined. Keep meta-information about your co-authors in [content/\_data/coauthors.yml](content/_data/coauthors.yml) and Jekyll will insert links to their webpages automatically. The co-author data format is as follows,
 
 ```yaml
 "adams":
@@ -134,11 +134,11 @@ There are several custom bibtex keywords that you can use to affect how the entr
 - `supp`: Adds a "Supp" button to a specified file (if a full link is not specified, the file will be assumed to be placed in the /assets/pdf/ directory)
 - `website`: Adds a "Website" button redirecting to the specified link
 
-You can implement your own buttons by editing the [theme/_layouts/bib.liquid](theme/_layouts/bib.liquid) file.
+You can implement your own buttons by editing the [theme/\_layouts/bib.liquid](theme/_layouts/bib.liquid) file.
 
 ## Changing theme color
 
-A variety of beautiful theme colors have been selected for you to choose from. The default is purple, but you can quickly change it by editing the `--global-theme-color` variable in the [theme/_sass/_themes.scss](theme/_sass/_themes.scss) file. Other color variables are listed there as well. The stock theme color options available can be found at [theme/_sass/_variables.scss](theme/_sass/_variables.scss). You can also add your own colors to this file assigning each a name for ease of use across the template.
+A variety of beautiful theme colors have been selected for you to choose from. The default is purple, but you can quickly change it by editing the `--global-theme-color` variable in the [theme/\_sass/\_themes.scss](theme/_sass/_themes.scss) file. Other color variables are listed there as well. The stock theme color options available can be found at [theme/\_sass/\_variables.scss](theme/_sass/_variables.scss). You can also add your own colors to this file assigning each a name for ease of use across the template.
 
 ## Adding social media information
 
@@ -165,4 +165,4 @@ Due to the necessary permissions (PAT and others mentioned above), it is recomme
 
 ## Customizing fonts, spacing, and more
 
-You can customize the fonts, spacing, and more by editing [theme/_sass/_base.scss](theme/_sass/_base.scss). The easiest way to try in advance the changes is by using [chrome dev tools](https://developer.chrome.com/docs/devtools/css) or [firefox dev tools](https://firefox-source-docs.mozilla.org/devtools-user/). In there you can click in the element and find all the attributes that are set for that element and where are they. For more information on how to use this, check [chrome](https://developer.chrome.com/docs/devtools/css) and [firefox](https://firefox-source-docs.mozilla.org/devtools-user/page_inspector/how_to/examine_and_edit_css/index.html) how-tos, and [this tutorial](https://www.youtube.com/watch?v=l0sgiwJyEu4).
+You can customize the fonts, spacing, and more by editing [theme/\_sass/\_base.scss](theme/_sass/_base.scss). The easiest way to try in advance the changes is by using [chrome dev tools](https://developer.chrome.com/docs/devtools/css) or [firefox dev tools](https://firefox-source-docs.mozilla.org/devtools-user/). In there you can click in the element and find all the attributes that are set for that element and where are they. For more information on how to use this, check [chrome](https://developer.chrome.com/docs/devtools/css) and [firefox](https://firefox-source-docs.mozilla.org/devtools-user/page_inspector/how_to/examine_and_edit_css/index.html) how-tos, and [this tutorial](https://www.youtube.com/watch?v=l0sgiwJyEu4).

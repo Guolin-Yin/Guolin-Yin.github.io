@@ -5,7 +5,7 @@ permalink: /projects/
 description: My projects and DEMOs in details
 nav: true
 nav_order: 3
-display_categories: [demo,work]
+display_categories: [demo, work]
 horizontal: false
 ---
 

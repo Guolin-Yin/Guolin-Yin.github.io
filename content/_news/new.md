@@ -24,5 +24,4 @@ I’m looking forward to presenting these findings at the workshop and engaging 
 
 Thank you for your continued support and interest in my work.
 
-*Guolin Yin*
-
+_Guolin Yin_

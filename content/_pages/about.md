@@ -19,21 +19,22 @@ news: true # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 ---
 
-Guolin Yin (尹国遴) is currently a Research Fellow at CWI, Queens University Belfast, UK, working under the supervision of [Prof. Simon Cotton](https://www.qub.ac.uk/research-centres/cwi/about/ProfessorSimonCotton/). Before that he was at the Department of Electrical Engineering and Electronics, the University of Liverpool, UK. He received his PhD from the same University in 2024 under the supervision of [Dr. Junqing Zhang](https://junqing-zhang.github.io/). 
+Guolin Yin (尹国遴) is currently a Research Fellow at CWI, Queens University Belfast, UK, working under the supervision of [Prof. Simon Cotton](https://www.qub.ac.uk/research-centres/cwi/about/ProfessorSimonCotton/). Before that he was at the Department of Electrical Engineering and Electronics, the University of Liverpool, UK. He received his PhD from the same University in 2024 under the supervision of [Dr. Junqing Zhang](https://junqing-zhang.github.io/).
 
 ---
+
 # Research area
 
 His work mainly involves designing novel AI-driven solutions for wireless signals, remote sensing, and wireless sensing. He is keen to expand his research area further and explore new interdisciplinary applications. He has an extensive background in:
 
 - Deep learning, Machine learning
 - Generative Models
-- Signal processing  
-- Radio Frequency Fingerprint Identification  
+- Signal processing
+- Radio Frequency Fingerprint Identification
 - Wireless Sensing
 
-
 ---
+
 # Professional Activities
 
 He is currently serving as a TPC member for several conferences and workshops, including:
@@ -43,10 +44,12 @@ He is currently serving as a TPC member for several conferences and workshops, i
 - **WS18 ICC 2025 Workshop – MLDLWiSec**
 
 He also serves as a reviewer for:
+
 - **IEEE Transactions on Wireless Communications (TWC)**
 - **IEEE Transactions on Mobile Computing (TMC)**
 
 ---
+
 # Contact
 
 Email: G.Yin@qub.ac.uk
