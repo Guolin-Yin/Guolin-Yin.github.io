@@ -142,8 +142,13 @@ module ExternalPosts
       final_title ||= "No title found"
 
       # If Notion's generic title is found, parse from the URL
-      if final_title == "Your connected workspace for wiki, docs & projects | Notion"
-        final_title = parse_title_from_notion_url(url)
+      notion_generic_titles = [
+        "Your connected workspace for wiki, docs & projects | Notion",
+        "Notion - The all-in-one workspace for your notes, tasks, wikis, and databases."
+      ]
+      if notion_generic_titles.include?(final_title) || final_title.include?("Notion")
+        parsed_title = parse_title_from_notion_url(url)
+        final_title = parsed_title unless parsed_title.nil? || parsed_title.empty?
       end
     
       # For summary/description
