@@ -466,6 +466,6 @@ The field continues to advance rapidly, driven by the urgent need for trustworth
 
 ## About This Work
 
-This blog post is part of ongoing research in wireless security and physical layer authentication. For more information on practical RFFI implementations, see the [Real-time Wi-Fi based RFFI project](/projects/Real-time%20Wi-Fi%20based%20RFFI/).
+This blog post is part of ongoing research in wireless security and physical layer authentication. For more information on practical RFFI implementations, see the [Real-time Wi-Fi based RFFI project](/projects/Real-time-Wi-Fi-based-RFFI/).
 
 {% bibliography --cited %}
