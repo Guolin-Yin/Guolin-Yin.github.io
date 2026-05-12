@@ -11,14 +11,16 @@
   contents:
     - title: Research Fellow
       institution: Queen's University Belfast
-      year: May 2024-Present
+      year: May 2025-Present
       description:
-        - Wi-Fi based RF Sensing
+        - Leading research on wireless sensing using Wi-Fi, with a focus on the IEEE 802.11bf protocol and Wi-Fi-based radio frequency fingerprinting (RFFI) for device authentication and physical-layer security.
     - title: Research Associate
       institution: University of Liverpool
       year: July 2024-May 2025
       description:
-        - Wi-Fi based radio frequency fingerprint identification (RFFI)
+        - Developed innovative wireless security solutions for Wi-Fi devices using advanced machine learning techniques as part of the HASC Future Communications Hub.
+        - Designed RFFI algorithms achieving over 95% identification accuracy in cross-environment, NLOS, and mobile conditions.
+        - Developed a noise-robust RFFI system using a diffusion model; published at WCNC 2025 and received the Best Workshop Paper Award.
 
 - title: Education
   type: time_table
@@ -39,6 +41,17 @@
       description:
         - Electronic Engineering
 
+- title: Research Experiences
+  type: time_table
+  contents:
+    - title: Domain Generalisable Wi-Fi-Based RFFI
+      institution: Queen's University Belfast
+      year: Jan 2025-Present
+      description:
+        - Developed a domain generalisable RFFI system capable of identifying Wi-Fi devices in previously unseen environments, addressing cross-environment robustness challenges caused by multipath propagation and channel-induced distortions.
+        - Demonstrated the system live at Mobile World Congress (MWC) 2026 Barcelona, processing over 52,000 inference packets in real-time and achieving 92% overall accuracy without prior exposure to the exhibition hall environment.
+        - Built a real-time prototype using USRP N210 SDR and multiple Wi-Fi dongles (9 devices across 3 brands) with deep learning-based device classification.
+
 - title: Teaching Experience
   type: time_table
   contents:
@@ -54,6 +67,9 @@
     - year: 2025
       items:
         - WCNC 2025 Best Workshop Paper Award
+    - year: 2026
+      items:
+        - Live Demo at Mobile World Congress (MWC) 2026 Barcelona
 
 - title: Academic Interests
   type: nested_list
