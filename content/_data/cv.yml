@@ -55,11 +55,16 @@
 - title: Teaching Experience
   type: time_table
   contents:
+    - title: Guest Lecturer
+      institution: Queen's University Belfast
+      year: 2025/26
+      description:
+        - Delivered two teaching sessions for ECS4002 Wireless Sensor Systems (20-credit module), one in each semester.
     - title: Teaching Assistant
       institution: University of Liverpool
       year: 2020-2024
       description:
-        - Assisted in teaching data-focused subjects (machine learning, statistics) as well as hardware-related topics (electronic circuit design, communication systems).
+        - Supported teaching over several years during my PhD in machine learning, statistics, electronic circuit design, and communication systems.
 
 - title: Honors and Awards
   type: time_table
