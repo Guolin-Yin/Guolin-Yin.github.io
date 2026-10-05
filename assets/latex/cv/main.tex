@@ -1,0 +1,434 @@
+%
+%Academic CV LaTeX Template
+% Author: Dubasi Pavan Kumar
+% LinkedIn: https://www.linkedin.com/in/im-pavankumar/
+% License: MIT
+%
+% For errors, suggestions, or improvements, please contact:
+% Email: pavankumard.pg19.ma@nitp.ac.in
+%
+
+
+
+\documentclass[a4paper,11pt]{article}
+
+% Package imports
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome5}
+
+% Color definitions
+\definecolor{darkblue}{RGB}{0,0,139}
+
+% Page layout
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+\setlength{\footskip}{5pt} % Addressing fancyhdr warning
+
+% Hyperlink setup (moved after fancyhdr to address warning)
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    filecolor=darkblue,
+    urlcolor=darkblue,
+}
+
+% Custom box settings
+\usepackage[most]{tcolorbox}
+\tcbset{
+    frame code={},
+    center title,
+    left=0pt,
+    right=0pt,
+    top=0pt,
+    bottom=0pt,
+    colback=gray!20,
+    colframe=white,
+    width=\dimexpr\textwidth\relax,
+    enlarge left by=-2mm,
+    boxsep=4pt,
+    arc=0pt,outer arc=0pt,
+}
+
+% URL style
+\urlstyle{same}
+
+% Text alignment
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand{\labelitemii}{$\vcenter{\hbox{\tiny$\circ$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm,itemsep=0.5mm]}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+
+% Commands for icon sizing and positioning
+\newcommand{\socialicon}[1]{\raisebox{-0.05em}{\resizebox{!}{1em}{#1}}}
+\newcommand{\ieeeicon}[1]{\raisebox{-0.3em}{\resizebox{!}{1.3em}{#1}}}
+
+% Font options
+\newcommand{\headerfonti}{\fontfamily{phv}\selectfont} % Helvetica-like (similar to Arial/Calibri)
+\newcommand{\headerfontii}{\fontfamily{ptm}\selectfont} % Times-like (similar to Times New Roman)
+\newcommand{\headerfontiii}{\fontfamily{ppl}\selectfont} % Palatino (elegant serif)
+\newcommand{\headerfontiv}{\fontfamily{pbk}\selectfont} % Bookman (readable serif)
+\newcommand{\headerfontv}{\fontfamily{pag}\selectfont} % Avant Garde-like (similar to Trebuchet MS)
+\newcommand{\headerfontvi}{\fontfamily{cmss}\selectfont} % Computer Modern Sans Serif
+\newcommand{\headerfontvii}{\fontfamily{qhv}\selectfont} % Quasi-Helvetica (another Arial/Calibri alternative)
+\newcommand{\headerfontviii}{\fontfamily{qpl}\selectfont} % Quasi-Palatino (another elegant serif option)
+\newcommand{\headerfontix}{\fontfamily{qtm}\selectfont} % Quasi-Times (another Times New Roman alternative)
+\newcommand{\headerfontx}{\fontfamily{bch}\selectfont} % Charter (clean serif font)
+
+\begin{document}
+\headerfontiii
+
+% Header
+\begin{center}
+    {\Huge\textbf{Guolin Yin}}
+\end{center}
+\vspace{-6mm}
+
+\begin{center}
+    \small{
+    +44 07737229819| \href{mailto:G.Yin@qub.ac.uk}{G.Yin@qub.ac.uk} | 
+    \faIcon{globe} \href{https://guolin-yin.github.io/}{Page}
+    }
+\end{center}
+\vspace{-6mm}
+
+\begin{center}
+    \small{
+    \socialicon{\faLinkedin} \href{https://www.linkedin.com/in/guolin-yin-302545227/}{Linkedin}  
+    % \socialicon{\faGithub} \href{https://github.com/your-username}{your-username} | 
+    % \ieeeicon{\includegraphics[height=1.3em]{ieee_collabratec_icon.png}} \href{https://ieee-collabratec.ieee.org/app/p/your-profile}{your-profile} |
+    % \socialicon{\faTwitter} \href{https://twitter.com/your-handle}{your-handle}
+    }
+\end{center}
+\vspace{-6mm}
+% \begin{center}
+%     \small{Your City, Your State - Your ZIP, Your Country}
+% \end{center}
+
+\vspace{-4mm}
+\section{\textbf{Work Experience}}
+% \vspace{-0.4mm}
+\resumeSubHeadingListStart
+
+\resumeProject
+  {Research Fellow}
+  {Queen's University Belfast}
+  {May 2025 - Present}
+  {}
+\resumeItemListStart
+    \item Conducting research at the Centre for Wireless Innovation (CWI) \href{https://www.qub.ac.uk/research-centres/cwi/}[{\textcolor{darkblue}{\faIcon{globe}}}], under the supervision of  \href{https://pure.qub.ac.uk/en/persons/simon-cotton}{Professor Simon Cotton\textcolor{darkblue}[{\faIcon{globe}}}]. 
+    \item Leading research on wireless sensing using Wi-Fi, with a focus on the IEEE 802.11bf protocol and Wi-Fi-based radio frequency fingerprinting (RFFI) for device authentication and physical-layer security.
+    \item Developing innovative techniques for environmental and context-aware sensing leveraging next-generation Wi-Fi signals.
+    \item Collaborating with multidisciplinary teams to advance practical applications of wireless sensing in smart environments.
+\resumeItemListEnd
+
+\resumeProject
+  {Research Associate}
+  {University of Liverpool}
+  {July 2024 - May 2025}
+  {}
+\resumeItemListStart
+        \item Developing innovative wireless security solutions for WiFi devices using advanced machine learning techniques as a PDRA supported by HASC: Future Communications Hub in All-Spectrum Connectivity [\href{https://allspectrumhub.org/}{\textcolor{darkblue}{\faIcon{globe}}}]. Collaborating with Heriot-Watt University, Queen’s University Belfast, and MathWorks to advance the integration of AI with wireless technologies, contributing significantly to the UK’s technological advancements.
+
+        \item Designed RFFI algorithms to overcome channel variability in practical scenarios, achieving over 95\% identification accuracy in challenging cross-environment, NLOS, and mobile conditions, and prototype a Wi-Fi-based RFFI system using the USRP N210 platform with PicoScenes for CSI extraction. Here is the DEMO create during this position. [\href{https://www.youtube.com/watch?v=jQuvRcBXh8I}{\textcolor{darkblue}{\faIcon{globe}}}]
+
+        \item Developed a noise-robust radio frequency fingerprint identification (RFFI) system by designing a diffusion model to address the noise problem in wireless channels; results were published at WCNC 2025 and received the \textbf{Best Workshop Paper Award}~\href{https://wcnc2025.ieee-wcnc.org/program-0/program-glance/best-paper-awards}[{\textcolor{darkblue}{\faIcon{globe}}}].
+
+\resumeItemListEnd
+
+% \resumeProject
+%   {Data Scientist (Part-time)}
+%   {SC Solutions AI}
+%   {Dec 2023 - July 2024}
+%   {{}[\href{https://scsolutions.ai/}{\textcolor{darkblue}{\faIcon{globe}}}]}
+% \resumeItemListStart
+%     \item Led a crop classification project, managed the end-to-end model training pipeline using Sentinel-1 and Sentinel-2 data for crop classification across South America. Designed a transformer-based classification model to integrate crop growth features and seasonal features to enhance accuracy in biomass estimation and crop classification.
+%     \item Led the development of a biomass estimation model by overseeing the complete pipeline from data collection (SAR imagery and GEDI LiDAR data) to model design and training. Engineered a transformer-based UNet architecture, resulting in highly accurate biomass estimations.
+    
+%     \item Led a multidisciplinary research team of five members in an innovate UK funded project. Coordinated tasks and facilitated effective communication within the team, ensuring timely completion of project milestones and fostering a collaborative working environment.
+% \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+\section{\textbf{Education}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Device-Free Wireless Sensing, \textit{PhD}}{Liverpool UK}
+{\textbf{University of Liverpool}, Department of Electronics, Electrical Engineering}{Sep 2020 - Sep 2024}
+\resumeItemListStart
+\item Thesis: \textbf{Deep Learning Powered Wi-Fi Sensing}, supervised by \href{https://junqing-zhang.github.io/}{Dr. Junqing Zhang~\faIcon{globe}}
+
+\resumeItemListEnd
+
+\resumeSubheading
+{Communication and Signal Processing, \textit{M.Sc}}{Manchester, UK}
+{\textbf{University of Manchester}, Department of Electronics, Electrical Engineering}{Oct 2018 – Dec 2019}
+\resumeItemListStart
+\item Result: Merit
+\resumeItemListEnd
+
+\resumeSubheading
+{Electronic Engineering, \textit{B.Eng.} }{Coventry, UK}
+{\textbf{Coventry University}, Department of Electronics, Electrical Engineering}{Sep 2016 – Sep 2018}
+\resumeItemListStart
+\item Result: First class
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{\textbf{Research Experiences}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+
+\resumeProject
+  {Domain Generalisable Wi-Fi-Based Radio Frequency Fingerprint Identification}
+  {Tools: USRP N210, PicoScenes}
+  {Jan 2025 -- Present}
+  {Queen's University Belfast}
+\resumeItemListStart
+    \item Developed a \textbf{domain generalisable} RFFI system capable of identifying Wi-Fi devices in previously unseen environments, addressing the critical challenge of cross-environment robustness caused by multipath propagation, signal interference, and channel-induced distortions.
+    \item Demonstrated the system live at \textbf{Mobile World Congress (MWC) 2026 Barcelona} as part of the HASC Hub exhibition, processing over \textbf{52,000 inference packets} in real-time and achieving \textbf{92\% overall accuracy} in the harsh radio environment of the exhibition hall --- without any prior exposure to that environment.
+    \item Built a real-time prototype using \textbf{USRP N210} SDR and multiple Wi-Fi dongles (9 devices across 3 brands), with deep learning-based device classification and real-time visualisation, demonstrating practical viability for real-world RFFI deployment.
+\resumeItemListEnd
+
+\resumeProject
+  {Denoise Diffusion Model for Radio Frequency Fingerprint Identification}
+  {Tools: USRP N210}
+  {July 2024 -- Dec 2024}
+  {University of Liverpool}
+
+\resumeItemListStart
+    \item Developing an advanced Radio Frequency Fingerprinting Identification (RFFI) algorithm to address challenges related to the multipath channel, with ongoing research utilising \textbf{MATLAB WLAN Toolbox} and \textbf{Communication Toolbox} for channel modeling, simulation, and signal processing.
+    \item Designed a \textbf{diffusion model} for noise removal of the band signal that enhanced the accuracy and robustness of RFFI under various noise conditions. Developed a robust classification model based on the transformer.
+    \item Conducted extensive real-world experiments using \textbf{USRP N210} and built a prototype RFFI system with a commercial Wi-Fi dongle, laptops, and USRPs.
+    % \item By the conclusion of this project, a demonstration of a Wi-Fi-based RFFI system will be presented. The project aims to develop a prototype capable of accurately recognizing Wi-Fi devices in diverse multipath channel environments, utilizing robust channel modelling and advanced signal processing techniques.
+\resumeItemListEnd
+
+\resumeProject
+{Adapting Wi-Fi Sensing Model to Dynamic Packets Transmission Rate }{Tools: Nexmon CSI tool, Asus RT-AC86U Router}{May 2023 – May 2024}{University of Liverpool}
+\resumeItemListStart
+\item Evaluated real-world application scenarios for Wi-Fi sensing systems by managing variable packet transmission rates in Wi-Fi networks to achieve \textbf{Integrated Sensing and Communication (ISAC)} during system deployment. Developed a novel Wi-Fi sensing approach capable of working on variable transmission rate, enabling the system to handle variable input sizes from different devices and network conditions. Enhanced the system robustness through custom-designed augmentation techniques, which significantly improved performance across diverse real-world deployment scenarios.
+    \item Prototyped Wi-Fi sensing with a complete pipeline, including collection of a \textbf{{gesture and activity dataset}} using an \textbf{{ASUS AC-86U router}} equipped with the \textbf{{nexmon CSI too}}l. As well as  data processing, incorporating practical signal processing algorithms for CSI data preprocessing, including noise reduction, outlier removal, etc. Applied channel modeling expertise to analyse multipath effects and channel variations while implementing deep learning models optimised for wireless signals.
+
+
+    
+    % \item Designed systems were validated through extensive real-world experiments across different environments and hardware setups, proving both scientific rigor and practical applicability. 
+        \item Research contributions are submitted to IEEE Transactions on Mobile Computing.
+\resumeItemListEnd
+
+\resumeProject
+  {Adversarial Machine Learning in Wi-Fi Sensing Systems}
+  {}
+  {Feb 2022 -- Feb 2023}
+  {University of Liverpool}
+\resumeItemListStart
+       \item Developed and validated various Wi-Fi sensing security analysis frameworks, and adapted various attack algorithms white and black box attacks to sensing systems, including FGSM, PGD, and DeepFool, to assess system vulnerabilities. Demonstrated the effectiveness of these attacks across different models and environments, achieving attack success rates of $97.0\%$ and $95.6\%$. 
+        \item Designed and implemented a robust certifiable defence mechanism through adversarial training, which effectively reduced attack success rates to 6\% while preserving system performance across different environments. This method not only mitigated adversarial threats but also qualified the robustness of Wi-Fi sensing models, ensuring they remain reliable and resilient against various attacks in diverse scenarios.
+        \item Research contributions are published to IEEE Transactions on Mobile Computing.
+\resumeItemListEnd
+
+
+\resumeProject
+  {Wi-Fi-based Cross-domain Gesture Recognition System}
+  {\href{https://github.com/Guolin-Yin/FewSense}{Github \faGithub}}
+  {Feb 2021 -- Dec 2021}
+  {University of Liverpool}
+\resumeItemListStart
+       \item Conducted research on Wi-Fi sensing systems to enhance adaptability and scalability in cross-domain scenarios. Built a Wi-Fi sensing system named FewSense which is capable of recognizing new activities in unseen environments with minimal data, addressing the scalability and domain dependency issues inherent in existing Wi-Fi sensing technologies. FewSense demonstrated reliable accuracy across diverse environments and outperformed existing methods in cross-domain recognition of novel classes. 
+        \item Evaluated the prototyped system, achieving $90\%$ accuracy in challenging cross-environment recognition for novel classes, outperforming existing methods. This result significantly enhances the practical applicability and reliability of Wi-Fi-based sensing systems, demonstrating robustness and adaptability in diverse real-world scenarios.
+        \item Research contributions are published to IEEE Transactions on Mobile Computing.
+\resumeItemListEnd
+
+
+
+\resumeSubHeadingListEnd
+
+
+
+
+
+\vspace{-6mm}
+
+
+\section{\textbf{Publications} \hfill \textcolor{darkblue}{
+% \scriptsize C=Conference, J=Journal, P=Patent, S=In Submission, T=Thesis
+}}
+\vspace{0.2mm}
+\small{
+\begin{enumerate}[leftmargin=*, labelsep=0.5em, align=left, widest={[\textbf{S.1}]}, itemindent=0em, label={\textbf{[\arabic*]}}]
+
+\item A. T. To, \textbf{G. Yin}, J. Zhang, Y. Ding, T. Q. Duong, and S. L. Cotton, “Quantum-Assisted Memory-Efficient Training for Parameter-Intensive Wi-Fi-Based Human Activity Recognition,” \textit{IEEE Trans. Netw. Sci. Eng.}, 2026, early access, doi: \href{https://doi.org/10.1109/TNSE.2026.3725484}{10.1109/TNSE.2026.3725484}; arXiv: \href{https://arxiv.org/abs/2609.04271}{2609.04271}.
+\item A. T. To, \textbf{G. Yin}, J. Zhang, Y. Ding, T. Q. Duong, and S. L. Cotton, “A Quantum-Optimized Training Framework for Radio Frequency Fingerprint Identification,” \textit{IEEE J. Sel. Areas Commun.}, vol. 44, pp. 5327--5340, 2026, doi: \href{https://doi.org/10.1109/JSAC.2026.3706263}{10.1109/JSAC.2026.3706263}.
+\item A. T. To, \textbf{G. Yin}, J. Zhang, Y. Ding, T. Q. Duong, and S. L. Cotton, “Towards Quantum Efficient Training for Radio Frequency Fingerprint Identification,” in \textit{2026 IEEE International Conference on Communications Workshops (ICC Workshops)}, 2026, pp. 1--6, doi: \href{https://doi.org/10.1109/ICCWorkshops63917.2026.11586252}{10.1109/ICCWorkshops63917.2026.11586252}.
+\item \textbf{G. Yin}, J. Zhang, G. Shen, and S. L. Cotton, “Practical Wi-Fi-Based Motion Recognition Under Variable Traffic Patterns,” \textit{arXiv:2605.08308}, 2026. \href{https://arxiv.org/abs/2605.08308}{arXiv:2605.08308}.
+\item \textbf{G. Yin}, J. Zhang, X. Yi, and X. Wang, “Evasion Attacks and Countermeasures in Deep Learning-Based Wi-Fi Gesture Recognition,” \textit{IEEE Trans. Mobile Comput.}, vol. 24, no. 9, pp. 8180--8195, Sep. 2025, doi: \href{https://doi.org/10.1109/TMC.2025.3557757}{10.1109/TMC.2025.3557757}.
+\item \textbf{G. Yin}, J. Zhang, Y. Ding, and S. L. Cotton, “Noise-Robust Radio Frequency Fingerprint Identification Using Denoise Diffusion Model,” in \textit{2025 IEEE Wireless Communications and Networking Conference (WCNC)}, Milan, Italy, 2025, pp. 1--6, doi: \href{https://doi.org/10.1109/WCNC61545.2025.10978824}{10.1109/WCNC61545.2025.10978824}. \textbf{Best Workshop Paper Award.}
+\item \textbf{G. Yin}, J. Zhang, G. Shen, and Y. Chen, “FewSense, Towards a Scalable and Cross-Domain Wi-Fi Sensing System Using Few-Shot Learning,” \textit{IEEE Trans. Mobile Comput.}, vol. 23, no. 1, pp. 453--468, 2024, doi: \href{https://doi.org/10.1109/TMC.2022.3221902}{10.1109/TMC.2022.3221902}.
+\end{enumerate}
+}
+
+
+
+\section{\textbf{Submitted Manuscript}}
+\small{
+\begin{enumerate}[leftmargin=*, labelsep=0.5em, align=left, widest={[\textbf{S.1}]}, itemindent=0em, label={\textbf{[\arabic*]}}]
+\item \textbf{G. Yin}, J. Zhang, J. Zhang, X. Wang, and S. L. Cotton, “Disentangling Wi-Fi RF Fingerprints from Multi-Domain Effects via Supervised Contrastive Training,” submitted to \textit{IEEE Transactions on Information Forensics and Security}.
+\end{enumerate}
+}
+
+
+\section{\textbf{Services}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+
+
+
+\resumeProject
+  {TPC Member}{}{}{}
+  % {\href{https://github.com/Guolin-Yin/FewSense}{Github \faGithub}}
+  % {Feb 2022 -- Dec 202}
+  % {University of Liverpool}
+\resumeItemListStart
+       \item 2025 International Conference on Computing, Networking and Communication (ICNC): AMCN
+       \item 2025 ICC Workshop: Machine Learning and Deep Learning for Wireless Security (MLDLWiSec).
+       \item 2025 INFOCOM DeepWireless.
+       \item 2025 IEEE World Forum on Internet of Things (WF-IoT).
+       \item 2024 IEEE Globecom Workshops: Second Workshop on Machine Learning and Deep Learning for Wireless Security. %{}[\href{https://globecom2024.ieee-globecom.org/workshop/ws-17-workshop-machine-learning-and-deep-learning-wireless-security}{\textcolor{darkblue}{\faIcon{globe}}}]
+\resumeItemListEnd
+
+% \resumeProject
+%   {Reviewer}{}{}{}
+%   \resumeItemListStart
+%        \item IEEE Transaction on Wireless Communications (TWC).
+% \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+
+\section{\textbf{Awards}}
+\vspace{-0.8mm}
+\resumeSubHeadingListStart
+\resumeProject
+  {2025 IEEE WCNC Best Workshop Paper Award}
+  {2025 IEEE Wireless Communications and Networking Conference.}
+  {2025}
+  {{}[\href{https://wcnc2025.ieee-wcnc.org/program-0/program-glance/best-paper-awards}
+  {\textcolor{darkblue}{\faIcon{globe}}}]
+  }
+\resumeSubHeadingListEnd
+
+
+\section{\textbf{Teaching Experience}}
+\resumeSubHeadingListStart
+\resumeProject
+  {Teaching Assistant}
+  {University of Liverpool}
+  {Dec 2020 -- Jun 2024}
+  {}
+\resumeItemListStart
+\item Assisted students in both data-focused subjects (e.g., statistics, machine learning, databases) using Python, and hardware-oriented subjects (e.g., electronic circuit design, communication systems). Provided one-on-one support and group guidance, fostering a productive and engaging learning environment.
+
+\item Demonstrated strong leadership and communication skills by preparing and delivering educational content, leading discussions, and managing lab activities. Effectively organized and coordinated course components, ensuring that students received comprehensive support and mentorship throughout their studies.
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+
+
+\section{\textbf{Skills}}
+\vspace{-0.4mm}
+ \resumeHeadingSkillStart
+    \resumeSubItem{Programming Languages:}{Python, Matlab.}
+    \resumeSubItem{Packages \& Libraries:}{WLAN Toolbox, Communication Toolbox, Pandas, Geopandas, Numpy, Tensorflow, Pytorch.}
+    \resumeSubItem{Deep Learning:}{Generative model, CNN, Transformer, UNET.}
+    \resumeSubItem{Hardware \& Tools}{USRP N210, Raspberry Pi, Nexmoon CSI tool, IEEE 802.11 CSI tool, Picoscenes.}
+
+ \resumeHeadingSkillEnd
+
+\end{document}
