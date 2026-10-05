@@ -66,6 +66,25 @@
       description:
         - Supported teaching over several years during my PhD in machine learning, statistics, electronic circuit design, and communication systems.
 
+- title: Professional Service
+  type: nested_list
+  contents:
+    - title: Technical programme committee member
+      items:
+        - 2024 — GLOBECOM 2024 Workshop, MLDLWS.
+        - 2025 — ICNC ’25 AMCN; INFOCOM DeepWireless 2025; GC Wkshps 2025, MLDL WS; WS18 ICC 2025 Workshop, MLDLWiSec.
+        - 2026 — ICNC ’26 AMCN; ICC 2026 WS-17, MLDL Security; WCNCW 2026, WS13.
+    - title: Technical programme committee reviewer
+      items:
+        - IEEE WF-IoT 2025, AI/Machine Learning Technologies.
+    - title: Journal reviewer
+      items:
+        - IEEE Transactions on Wireless Communications.
+        - IEEE Transactions on Mobile Computing.
+    - title: Upcoming accepted TPC membership
+      items:
+        - GC Wkshps 2026, MLDL WS, December 2026.
+
 - title: Honors and Awards
   type: time_table
   contents:

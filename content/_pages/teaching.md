@@ -4,7 +4,7 @@ permalink: /teaching/
 title: Teaching
 description: Teaching and student-learning support experience.
 nav: true
-nav_order: 6
+nav_order: 4
 ---
 
 ## Guest Lecturer — Queen’s University Belfast

@@ -43,7 +43,7 @@ rss_icon: true
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 search_enabled: true
 socials_in_search: true
 bib_search: true
@@ -231,6 +231,7 @@ layouts_dir: theme/_layouts
 includes_dir: theme/_includes
 exclude:
   - bin/
+  - output/playwright/
   - CONTRIBUTING.md
   - CUSTOMIZE.md
   - Dockerfile

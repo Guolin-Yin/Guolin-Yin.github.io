@@ -1,6 +1,9 @@
 _site
+output/playwright/
+.playwright-cli/
 .bundle
 .sass-cache
+assets/latex/cv/build/
 .jekyll-cache
 .jekyll-metadata
 .DS_store
