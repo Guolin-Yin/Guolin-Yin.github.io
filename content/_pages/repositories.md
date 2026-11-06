@@ -2,18 +2,18 @@
 layout: page
 permalink: /repositories/
 title: Code
-description: Repositories of my papers and some useful respositories
+description: Repositories for my papers and other useful research tools
 nav: true
 nav_order: 7
 ---
 
 {% if site.data.repositories.github_users %}
 
-## My Github
+## My GitHub
 
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+<div class="repositories d-flex flex-wrap flex-md-row flex-column align-items-stretch">
   {% for user in site.data.repositories.github_users %}
-    {% include repository/repo_user.liquid username=user %}
+    {% include repository/repo_user.liquid user=user %}
   {% endfor %}
 </div>
 
@@ -25,7 +25,7 @@ nav_order: 7
 
   <h4>{{ user }}</h4>
   {% endif %}
-  <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+  <div class="repositories d-flex flex-wrap flex-md-row flex-column align-items-stretch">
   {% include repository/repo_trophies.liquid username=user %}
   </div>
 
@@ -39,7 +39,7 @@ nav_order: 7
 
 ## My Repositories
 
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+<div class="repositories d-flex flex-wrap flex-md-row flex-column align-items-stretch">
   {% for repo in site.data.repositories.github_repos %}
     {% include repository/repo.liquid repository=repo %}
   {% endfor %}
@@ -48,7 +48,7 @@ nav_order: 7
 
 ## Useful Repositories
 
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+<div class="repositories d-flex flex-wrap flex-md-row flex-column align-items-stretch">
   {% for repo in site.data.repositories.useful_repos %}
     {% include repository/repo.liquid repository=repo %}
   {% endfor %}

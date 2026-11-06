@@ -561,9 +561,122 @@ footer.sticky-bottom {
 
 // Repositories
 
+.repositories {
+  margin: 0 -0.5rem;
+}
+
+.repository-card,
+.repository-profile-card {
+  height: 100%;
+  color: var(--global-text-color);
+  background: var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  transition: var(--transition-default);
+
+  &:hover {
+    color: var(--global-text-color);
+    border-color: var(--global-theme-color);
+    box-shadow: var(--shadow-card-hover);
+    text-decoration: none;
+    transform: translateY(-2px);
+  }
+}
+
+.repository-card {
+  display: flex;
+  min-height: 175px;
+  padding: 1.25rem;
+  flex-direction: column;
+
+  p {
+    color: var(--global-text-color-light);
+    margin: 1rem 0;
+    flex-grow: 1;
+  }
+}
+
+.repository-card-header {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.repository-card-title,
+.repository-profile-name {
+  color: var(--global-text-color);
+  font-weight: var(--font-weight-semibold);
+}
+
+.repository-card-owner,
+.repository-profile-handle,
+.repository-card-meta {
+  color: var(--global-text-color-light);
+  font-size: 0.85rem;
+}
+
+.repository-card-arrow {
+  color: var(--global-theme-color);
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.repository-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.repository-language-dot {
+  width: 0.65rem;
+  height: 0.65rem;
+  background: var(--global-theme-color);
+  border-radius: 50%;
+}
+
+.repository-profile-card {
+  display: flex;
+  padding: 1.5rem;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.repository-profile-mark {
+  display: inline-flex;
+  width: 4rem;
+  height: 4rem;
+  color: var(--global-hover-text-color);
+  background: var(--global-theme-color);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: var(--font-weight-semibold);
+  flex: 0 0 auto;
+}
+
+.repository-profile-copy {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.repository-profile-description {
+  color: var(--global-text-color-light);
+  margin-top: 0.5rem;
+}
+
 @media (min-width: 768px) {
   .repo {
-    max-width: 50%;
+    width: 50%;
+  }
+
+  .repo-profile {
+    width: 100%;
   }
 }
 
