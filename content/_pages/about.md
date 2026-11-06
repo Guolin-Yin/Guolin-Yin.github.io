@@ -20,7 +20,7 @@ latest_posts: false
     </nav>
   </div>
   <figure class="home-photo">
-    <img src="{{ '/assets/img/prof_pic.JPG' | relative_url }}" alt="Guolin Yin in Belfast" loading="eager" />
+    <img src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="Guolin Yin in Belfast" loading="eager" />
     <figcaption>Belfast, Northern Ireland</figcaption>
   </figure>
 </section>

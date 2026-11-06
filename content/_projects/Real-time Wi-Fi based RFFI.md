@@ -37,7 +37,7 @@ The demo setup consists of the following components:
   The AP is responsible for connecting multiple Wi-Fi dongles (transmitters) to the network, enabling communication and data collection.
   <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-      {% include figure.liquid loading="eager" path="assets/img/RFFI_DEMO/ap.png" class="img-fluid rounded z-depth-1" %}
+      {% include figure.liquid loading="eager" path="assets/img/RFFI_DEMO/AP.png" class="img-fluid rounded z-depth-1" %}
 
 - **Transmitter:**  
   A laptop equipped with a Wi-Fi dongle acts as the transmitter, sending Wi-Fi packets for identification.
